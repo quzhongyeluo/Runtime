@@ -15,6 +15,8 @@
 		FC31DC501F409B220046D72A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC31DC4E1F409B220046D72A /* LaunchScreen.storyboard */; };
 		FC31DC5B1F409B220046D72A /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC31DC5A1F409B220046D72A /* RuntimeTests.m */; };
 		FC31DC661F409B220046D72A /* RuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC31DC651F409B220046D72A /* RuntimeUITests.m */; };
+		FC31DC761F40A5410046D72A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FC31DC751F40A5410046D72A /* User.m */; };
+		FC31DC791F40A6820046D72A /* PigeonholeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC31DC781F40A6820046D72A /* PigeonholeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		FC31DC611F409B220046D72A /* RuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC31DC651F409B220046D72A /* RuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeUITests.m; sourceTree = "<group>"; };
 		FC31DC671F409B220046D72A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC31DC741F40A5410046D72A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FC31DC751F40A5410046D72A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FC31DC771F40A6820046D72A /* PigeonholeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PigeonholeViewController.h; sourceTree = "<group>"; };
+		FC31DC781F40A6820046D72A /* PigeonholeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PigeonholeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				FC31DC461F409B220046D72A /* ViewController.h */,
 				FC31DC471F409B220046D72A /* ViewController.m */,
 				FC31DC491F409B220046D72A /* Main.storyboard */,
+				FC31DC771F40A6820046D72A /* PigeonholeViewController.h */,
+				FC31DC781F40A6820046D72A /* PigeonholeViewController.m */,
+				FC31DC731F40A5230046D72A /* 自动归档解档 */,
 				FC31DC4C1F409B220046D72A /* Assets.xcassets */,
 				FC31DC4E1F409B220046D72A /* LaunchScreen.storyboard */,
 				FC31DC511F409B220046D72A /* Info.plist */,
@@ -138,6 +147,15 @@
 				FC31DC671F409B220046D72A /* Info.plist */,
 			);
 			path = RuntimeUITests;
+			sourceTree = "<group>";
+		};
+		FC31DC731F40A5230046D72A /* 自动归档解档 */ = {
+			isa = PBXGroup;
+			children = (
+				FC31DC741F40A5410046D72A /* User.h */,
+				FC31DC751F40A5410046D72A /* User.m */,
+			);
+			path = "自动归档解档";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC31DC761F40A5410046D72A /* User.m in Sources */,
 				FC31DC481F409B220046D72A /* ViewController.m in Sources */,
+				FC31DC791F40A6820046D72A /* PigeonholeViewController.m in Sources */,
 				FC31DC451F409B220046D72A /* AppDelegate.m in Sources */,
 				FC31DC421F409B220046D72A /* main.m in Sources */,
 			);
@@ -520,6 +540,7 @@
 				FC31DC6C1F409B220046D72A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC31DC6D1F409B220046D72A /* Build configuration list for PBXNativeTarget "RuntimeTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +549,7 @@
 				FC31DC6F1F409B220046D72A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC31DC701F409B220046D72A /* Build configuration list for PBXNativeTarget "RuntimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +558,7 @@
 				FC31DC721F409B220046D72A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

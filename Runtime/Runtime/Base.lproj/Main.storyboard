@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="q3e-NN-pNc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--首页-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDz-dv-0gK">
+                                <rect key="frame" x="149" y="94" width="77" height="30"/>
+                                <state key="normal" title="自动归解档"/>
+                                <connections>
+                                    <segue destination="ZCR-dh-4x0" kind="push" id="RJq-Jr-1WF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NDz-dv-0gK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f4E-Kh-UAS"/>
+                            <constraint firstItem="NDz-dv-0gK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="nZu-8z-lZv"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="首页" id="D13-DD-9J5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1012" y="-559"/>
+        </scene>
+        <!--自动归解档-->
+        <scene sceneID="Xie-6z-0AG">
+            <objects>
+                <viewController id="ZCR-dh-4x0" customClass="PigeonholeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bi0-aB-O4i"/>
+                        <viewControllerLayoutGuide type="bottom" id="7sr-fw-LOV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="grB-Gv-eHa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07v-Gj-4qk">
+                                <rect key="frame" x="122" y="318.5" width="31" height="30"/>
+                                <state key="normal" title="归档"/>
+                                <connections>
+                                    <action selector="pigenoholeAction:" destination="ZCR-dh-4x0" eventType="touchUpInside" id="MaX-Ih-igs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81G-eT-vvd">
+                                <rect key="frame" x="222" y="318.5" width="31" height="30"/>
+                                <state key="normal" title="解档"/>
+                                <connections>
+                                    <action selector="unarchiveAction:" destination="ZCR-dh-4x0" eventType="touchUpInside" id="8Bc-wQ-un4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="81G-eT-vvd" firstAttribute="centerX" secondItem="grB-Gv-eHa" secondAttribute="centerX" constant="50" id="PxN-FG-I2c"/>
+                            <constraint firstItem="07v-Gj-4qk" firstAttribute="centerX" secondItem="grB-Gv-eHa" secondAttribute="centerX" constant="-50" id="fRH-Yf-FGW"/>
+                            <constraint firstItem="07v-Gj-4qk" firstAttribute="centerY" secondItem="grB-Gv-eHa" secondAttribute="centerY" id="oSe-r3-WNr"/>
+                            <constraint firstItem="81G-eT-vvd" firstAttribute="centerY" secondItem="grB-Gv-eHa" secondAttribute="centerY" id="vWA-Co-fCc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="自动归解档" id="YSp-ZG-us6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhD-B0-F0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="-559"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kYn-v9-QgZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q3e-NN-pNc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xSd-i4-WXl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9hx-hI-vaY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhn-BE-eF6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="-559.07046476761627"/>
         </scene>
     </scenes>
 </document>
