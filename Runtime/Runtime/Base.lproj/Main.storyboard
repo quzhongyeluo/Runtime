@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -67,20 +68,45 @@
                                     <action selector="unarchiveAction:" destination="ZCR-dh-4x0" eventType="touchUpInside" id="8Bc-wQ-un4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="归档前采用字典初始化模型，解档后模型转成字典输出" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjI-i5-nLM">
+                                <rect key="frame" x="20" y="154" width="335" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="Koz-4x-hvm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CK-Qu-ZNP">
+                                <rect key="frame" x="46" y="586" width="283" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MjI-i5-nLM" firstAttribute="top" secondItem="Bi0-aB-O4i" secondAttribute="bottom" constant="90" id="3bb-q8-q54"/>
+                            <constraint firstAttribute="trailing" secondItem="MjI-i5-nLM" secondAttribute="trailing" constant="20" id="PZz-4d-R5q"/>
                             <constraint firstItem="81G-eT-vvd" firstAttribute="centerX" secondItem="grB-Gv-eHa" secondAttribute="centerX" constant="50" id="PxN-FG-I2c"/>
+                            <constraint firstItem="MjI-i5-nLM" firstAttribute="leading" secondItem="grB-Gv-eHa" secondAttribute="leading" constant="20" id="Q6O-vn-NsF"/>
+                            <constraint firstItem="1CK-Qu-ZNP" firstAttribute="leading" secondItem="grB-Gv-eHa" secondAttribute="leadingMargin" constant="30" id="cVL-CR-AJe"/>
+                            <constraint firstItem="7sr-fw-LOV" firstAttribute="top" secondItem="1CK-Qu-ZNP" secondAttribute="bottom" constant="60" id="fAY-13-Lw6"/>
                             <constraint firstItem="07v-Gj-4qk" firstAttribute="centerX" secondItem="grB-Gv-eHa" secondAttribute="centerX" constant="-50" id="fRH-Yf-FGW"/>
                             <constraint firstItem="07v-Gj-4qk" firstAttribute="centerY" secondItem="grB-Gv-eHa" secondAttribute="centerY" id="oSe-r3-WNr"/>
+                            <constraint firstItem="MjI-i5-nLM" firstAttribute="centerX" secondItem="grB-Gv-eHa" secondAttribute="centerX" id="rcZ-zw-yyW"/>
                             <constraint firstItem="81G-eT-vvd" firstAttribute="centerY" secondItem="grB-Gv-eHa" secondAttribute="centerY" id="vWA-Co-fCc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1CK-Qu-ZNP" secondAttribute="trailing" constant="30" id="zvd-Cf-a4O"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="自动归解档" id="YSp-ZG-us6"/>
+                    <connections>
+                        <outlet property="content" destination="1CK-Qu-ZNP" id="4Ds-yb-EV8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhD-B0-F0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1657" y="-559"/>
+            <point key="canvasLocation" x="1656.8" y="-559.07046476761627"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kYn-v9-QgZ">

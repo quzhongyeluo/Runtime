@@ -8,9 +8,15 @@
 
 #import "PigeonholeViewController.h"
 #import "User.h"
+#import "NSObject+keyValues.h"
+
 @interface PigeonholeViewController ()
 
 @property (nonatomic,copy) NSString *path;
+
+@property (nonatomic,copy) NSDictionary *userDict;
+
+@property (weak, nonatomic) IBOutlet UILabel *content;
 
 @end
 
@@ -22,6 +28,13 @@
     
     NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
     _path = [path stringByAppendingPathComponent:@"user"];
+    
+    _userDict = @{
+                  @"name":@"quzhongyeluo",
+                  @"age":@21,
+                  @"phone":@10086,
+                  @"userid":@"1"
+                  };
 
 }
 
@@ -38,12 +51,10 @@
  */
 - (IBAction)pigenoholeAction:(UIButton *)sender {
     
-    User *user = [[User alloc] init];
-    user.name = @"quzhongyeluo";
-    user.age = @20;
-    user.phone = @10086;
-    user.userid = @"1";
-    
+    // 通过字典初始化
+    User *user = [[User alloc] initWithDictionary:_userDict];
+
+    // 归档
     [NSKeyedArchiver archiveRootObject:user toFile:_path];
 }
 
@@ -55,12 +66,14 @@
  */
 - (IBAction)unarchiveAction:(UIButton *)sender {
     
+    // 解档
     User *user = [NSKeyedUnarchiver unarchiveObjectWithFile:_path];
+
+    // 模型转成字典
+    NSDictionary *dict = [user objectToDictionary];
+    NSLog(@"%@",dict);
     
-    NSLog(@"%@",user.name);
-    NSLog(@"%@",user.age);
-    NSLog(@"%@",user.phone);
-    NSLog(@"%@",user.userid);
+    _content.text = [NSString stringWithFormat:@"%@",dict];
 }
 
 
