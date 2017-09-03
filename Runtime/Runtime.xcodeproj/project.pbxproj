@@ -17,8 +17,10 @@
 		FC31DC661F409B220046D72A /* RuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC31DC651F409B220046D72A /* RuntimeUITests.m */; };
 		FC31DC761F40A5410046D72A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FC31DC751F40A5410046D72A /* User.m */; };
 		FC31DC791F40A6820046D72A /* PigeonholeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC31DC781F40A6820046D72A /* PigeonholeViewController.m */; };
-		FC31DC7D1F40ADCF0046D72A /* NSObject+keyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = FC31DC7C1F40ADCF0046D72A /* NSObject+keyValues.m */; };
-		FC497D8F1F5BFB9E00C50C75 /* UIImageView+ClickBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FC497D8E1F5BFB9E00C50C75 /* UIImageView+ClickBlock.m */; };
+		FC31DC7D1F40ADCF0046D72A /* NSObject+QZ_KeyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = FC31DC7C1F40ADCF0046D72A /* NSObject+QZ_KeyValues.m */; };
+		FC497D8F1F5BFB9E00C50C75 /* UIImageView+QZ_ClickBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FC497D8E1F5BFB9E00C50C75 /* UIImageView+QZ_ClickBlock.m */; };
+		FC497D931F5C0AB400C50C75 /* UIButton+QZ_BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FC497D921F5C0AB400C50C75 /* UIButton+QZ_BackgroundColor.m */; };
+		FC497D961F5C47D100C50C75 /* UIButton+QZ_RepeatClick.m in Sources */ = {isa = PBXBuildFile; fileRef = FC497D951F5C47D100C50C75 /* UIButton+QZ_RepeatClick.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +61,14 @@
 		FC31DC751F40A5410046D72A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		FC31DC771F40A6820046D72A /* PigeonholeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PigeonholeViewController.h; path = ../PigeonholeViewController.h; sourceTree = "<group>"; };
 		FC31DC781F40A6820046D72A /* PigeonholeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PigeonholeViewController.m; path = ../PigeonholeViewController.m; sourceTree = "<group>"; };
-		FC31DC7B1F40ADCF0046D72A /* NSObject+keyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+keyValues.h"; sourceTree = "<group>"; };
-		FC31DC7C1F40ADCF0046D72A /* NSObject+keyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+keyValues.m"; sourceTree = "<group>"; };
-		FC497D8D1F5BFB9E00C50C75 /* UIImageView+ClickBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ClickBlock.h"; sourceTree = "<group>"; };
-		FC497D8E1F5BFB9E00C50C75 /* UIImageView+ClickBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ClickBlock.m"; sourceTree = "<group>"; };
+		FC31DC7B1F40ADCF0046D72A /* NSObject+QZ_KeyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+QZ_KeyValues.h"; sourceTree = "<group>"; };
+		FC31DC7C1F40ADCF0046D72A /* NSObject+QZ_KeyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+QZ_KeyValues.m"; sourceTree = "<group>"; };
+		FC497D8D1F5BFB9E00C50C75 /* UIImageView+QZ_ClickBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+QZ_ClickBlock.h"; sourceTree = "<group>"; };
+		FC497D8E1F5BFB9E00C50C75 /* UIImageView+QZ_ClickBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+QZ_ClickBlock.m"; sourceTree = "<group>"; };
+		FC497D911F5C0AB400C50C75 /* UIButton+QZ_BackgroundColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+QZ_BackgroundColor.h"; sourceTree = "<group>"; };
+		FC497D921F5C0AB400C50C75 /* UIButton+QZ_BackgroundColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+QZ_BackgroundColor.m"; sourceTree = "<group>"; };
+		FC497D941F5C47D100C50C75 /* UIButton+QZ_RepeatClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+QZ_RepeatClick.h"; sourceTree = "<group>"; };
+		FC497D951F5C47D100C50C75 /* UIButton+QZ_RepeatClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+QZ_RepeatClick.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 				FC31DC7A1F40ADA20046D72A /* 字典与模型互转 */,
 				FC31DC731F40A5230046D72A /* 自动归档解档 */,
 				FC497D8C1F5BF80A00C50C75 /* 为Category分类添加属性 */,
+				FC497D901F5C08E200C50C75 /* 为Category分类动态添加方法 */,
 				FC31DC4C1F409B220046D72A /* Assets.xcassets */,
 				FC31DC4E1F409B220046D72A /* LaunchScreen.storyboard */,
 				FC31DC511F409B220046D72A /* Info.plist */,
@@ -169,8 +176,8 @@
 		FC31DC7A1F40ADA20046D72A /* 字典与模型互转 */ = {
 			isa = PBXGroup;
 			children = (
-				FC31DC7B1F40ADCF0046D72A /* NSObject+keyValues.h */,
-				FC31DC7C1F40ADCF0046D72A /* NSObject+keyValues.m */,
+				FC31DC7B1F40ADCF0046D72A /* NSObject+QZ_KeyValues.h */,
+				FC31DC7C1F40ADCF0046D72A /* NSObject+QZ_KeyValues.m */,
 			);
 			path = "字典与模型互转";
 			sourceTree = "<group>";
@@ -178,10 +185,21 @@
 		FC497D8C1F5BF80A00C50C75 /* 为Category分类添加属性 */ = {
 			isa = PBXGroup;
 			children = (
-				FC497D8D1F5BFB9E00C50C75 /* UIImageView+ClickBlock.h */,
-				FC497D8E1F5BFB9E00C50C75 /* UIImageView+ClickBlock.m */,
+				FC497D8D1F5BFB9E00C50C75 /* UIImageView+QZ_ClickBlock.h */,
+				FC497D8E1F5BFB9E00C50C75 /* UIImageView+QZ_ClickBlock.m */,
 			);
 			path = "为Category分类添加属性";
+			sourceTree = "<group>";
+		};
+		FC497D901F5C08E200C50C75 /* 为Category分类动态添加方法 */ = {
+			isa = PBXGroup;
+			children = (
+				FC497D911F5C0AB400C50C75 /* UIButton+QZ_BackgroundColor.h */,
+				FC497D921F5C0AB400C50C75 /* UIButton+QZ_BackgroundColor.m */,
+				FC497D941F5C47D100C50C75 /* UIButton+QZ_RepeatClick.h */,
+				FC497D951F5C47D100C50C75 /* UIButton+QZ_RepeatClick.m */,
+			);
+			path = "为Category分类动态添加方法";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,8 +343,10 @@
 				FC31DC791F40A6820046D72A /* PigeonholeViewController.m in Sources */,
 				FC31DC451F409B220046D72A /* AppDelegate.m in Sources */,
 				FC31DC421F409B220046D72A /* main.m in Sources */,
-				FC31DC7D1F40ADCF0046D72A /* NSObject+keyValues.m in Sources */,
-				FC497D8F1F5BFB9E00C50C75 /* UIImageView+ClickBlock.m in Sources */,
+				FC31DC7D1F40ADCF0046D72A /* NSObject+QZ_KeyValues.m in Sources */,
+				FC497D961F5C47D100C50C75 /* UIButton+QZ_RepeatClick.m in Sources */,
+				FC497D931F5C0AB400C50C75 /* UIButton+QZ_BackgroundColor.m in Sources */,
+				FC497D8F1F5BFB9E00C50C75 /* UIImageView+QZ_ClickBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

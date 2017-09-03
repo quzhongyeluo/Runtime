@@ -8,7 +8,7 @@
 
 #import "PigeonholeViewController.h"
 #import "User.h"
-#import "NSObject+keyValues.h"
+#import "NSObject+QZ_KeyValues.h"
 
 @interface PigeonholeViewController ()
 
@@ -52,7 +52,7 @@
 - (IBAction)pigenoholeAction:(UIButton *)sender {
     
     // 通过字典初始化
-    User *user = [[User alloc] initWithDictionary:_userDict];
+    User *user = [[User alloc] initWithQZ_Dictionary:_userDict];
 
     // 归档
     [NSKeyedArchiver archiveRootObject:user toFile:_path];
@@ -70,7 +70,7 @@
     User *user = [NSKeyedUnarchiver unarchiveObjectWithFile:_path];
 
     // 模型转成字典
-    NSDictionary *dict = [user objectToDictionary];
+    NSDictionary *dict = [user qz_ObjectToDictionary];
     NSLog(@"%@",dict);
     
     _content.text = [NSString stringWithFormat:@"%@",dict];

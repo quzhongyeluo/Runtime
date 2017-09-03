@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (keyValues)
+@interface NSObject (QZ_KeyValues)
 
-- (id)initWithDictionary:(NSDictionary *)aDictionary;
+- (id)initWithQZ_Dictionary:(NSDictionary *)dictionary;
 
-- (NSDictionary *)objectToDictionary;
+- (NSDictionary *)qz_ObjectToDictionary;
 
 @end

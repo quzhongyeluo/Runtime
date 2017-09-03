@@ -6,24 +6,24 @@
 //  Copyright © 2017年 曲终叶落. All rights reserved.
 //
 
-#import "NSObject+keyValues.h"
+#import "NSObject+QZ_KeyValues.h"
 #import <objc/message.h>
 
-@implementation NSObject (keyValues)
+@implementation NSObject (QZ_KeyValues)
 
 /**
  字典转模型
 
- @param aDictionary 字典
+ @param dictionary 字典
  @return 模型
  */
--(id)initWithDictionary:(NSDictionary *)aDictionary{
+-(id)initWithQZ_Dictionary:(NSDictionary *)dictionary{
     
     id objc = [self init];
     
-    for (NSString *key in aDictionary.allKeys) {
+    for (NSString *key in dictionary.allKeys) {
         
-        id value = aDictionary[key];
+        id value = dictionary[key];
         
         // 判断当前属性是否为model
         objc_property_t property = class_getProperty([self class], key.UTF8String);
@@ -39,7 +39,7 @@
         NSString *className = NSStringFromClass([self class]);
         
         if ([typeString isEqualToString:className]) {
-            value = [self initWithDictionary:value];
+            value = [self initWithQZ_Dictionary:value];
         }
         
         // 当前属性是否为model
@@ -63,7 +63,7 @@
 
  @return 字典
  */
-- (NSDictionary *)objectToDictionary{
+- (NSDictionary *)qz_ObjectToDictionary{
     
     unsigned int outCount = 0;
     
@@ -83,7 +83,7 @@
             
             // 判断当前属性是不是Model
             if ([value isKindOfClass:[self class]] && value) {
-                value = [value objectToDictionary];
+                value = [value qz_ObjectToDictionary];
             }
 
             if (value) {

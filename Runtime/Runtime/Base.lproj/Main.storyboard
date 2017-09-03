@@ -36,18 +36,44 @@
                                     <constraint firstAttribute="width" constant="80" id="kco-3O-jsd"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMo-NR-763">
+                                <rect key="frame" x="187" y="647" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXH-oL-cz3">
+                                <rect key="frame" x="110.5" y="244" width="153" height="30"/>
+                                <state key="normal" title="更改下面按钮的背景色"/>
+                                <connections>
+                                    <action selector="changeBtnbackgroundColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLa-3b-uhq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feH-kN-APT">
+                                <rect key="frame" x="162.5" y="294" width="49" height="34"/>
+                                <state key="normal" title="------"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8sK-cH-spw" firstAttribute="top" secondItem="NDz-dv-0gK" secondAttribute="bottom" constant="20" id="Ad7-j8-4Yo"/>
+                            <constraint firstItem="YMo-NR-763" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KMg-6z-eGT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YMo-NR-763" secondAttribute="bottom" constant="20" id="KgG-vk-AwW"/>
+                            <constraint firstItem="jXH-oL-cz3" firstAttribute="centerX" secondItem="8sK-cH-spw" secondAttribute="centerX" id="MJi-Ff-baK"/>
                             <constraint firstItem="NDz-dv-0gK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f4E-Kh-UAS"/>
+                            <constraint firstItem="feH-kN-APT" firstAttribute="centerX" secondItem="jXH-oL-cz3" secondAttribute="centerX" id="fuW-9c-k4V"/>
                             <constraint firstItem="8sK-cH-spw" firstAttribute="centerX" secondItem="NDz-dv-0gK" secondAttribute="centerX" id="hHw-x9-szG"/>
                             <constraint firstItem="NDz-dv-0gK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="nZu-8z-lZv"/>
+                            <constraint firstItem="feH-kN-APT" firstAttribute="top" secondItem="jXH-oL-cz3" secondAttribute="bottom" constant="20" id="sWy-73-4ee"/>
+                            <constraint firstItem="jXH-oL-cz3" firstAttribute="top" secondItem="8sK-cH-spw" secondAttribute="bottom" constant="20" id="xDC-aW-8h0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="D13-DD-9J5"/>
                     <connections>
+                        <outlet property="changeBtn" destination="feH-kN-APT" id="dgR-b2-prj"/>
+                        <outlet property="clickChangeBtn" destination="jXH-oL-cz3" id="b4r-5k-91Q"/>
                         <outlet property="imageView" destination="8sK-cH-spw" id="zEI-va-XMF"/>
+                        <outlet property="pLb" destination="YMo-NR-763" id="LSz-eb-Kb5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
