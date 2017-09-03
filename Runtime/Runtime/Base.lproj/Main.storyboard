@@ -29,14 +29,26 @@
                                     <segue destination="ZCR-dh-4x0" kind="push" id="RJq-Jr-1WF"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="click" translatesAutoresizingMaskIntoConstraints="NO" id="8sK-cH-spw">
+                                <rect key="frame" x="147" y="144" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="jeY-uf-hMK"/>
+                                    <constraint firstAttribute="width" constant="80" id="kco-3O-jsd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8sK-cH-spw" firstAttribute="top" secondItem="NDz-dv-0gK" secondAttribute="bottom" constant="20" id="Ad7-j8-4Yo"/>
                             <constraint firstItem="NDz-dv-0gK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f4E-Kh-UAS"/>
+                            <constraint firstItem="8sK-cH-spw" firstAttribute="centerX" secondItem="NDz-dv-0gK" secondAttribute="centerX" id="hHw-x9-szG"/>
                             <constraint firstItem="NDz-dv-0gK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="nZu-8z-lZv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="首页" id="D13-DD-9J5"/>
+                    <connections>
+                        <outlet property="imageView" destination="8sK-cH-spw" id="zEI-va-XMF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,8 +89,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CK-Qu-ZNP">
-                                <rect key="frame" x="46" y="586" width="283" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CK-Qu-ZNP">
+                                <rect key="frame" x="46" y="607" width="283" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -127,4 +139,7 @@
             <point key="canvasLocation" x="93.599999999999994" y="-559.07046476761627"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="click" width="735" height="735"/>
+    </resources>
 </document>

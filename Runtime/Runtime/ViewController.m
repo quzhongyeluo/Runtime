@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "UIImageView+ClickBlock.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -17,6 +20,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    _imageView.clickBlock = ^{
+        
+        NSLog(@"图片点击成功");
+    };
+    
 }
 
 

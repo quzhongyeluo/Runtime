@@ -42,7 +42,7 @@
             value = [self initWithDictionary:value];
         }
         
-        // 当前不是model
+        // 当前属性是否为model
         NSString *methodName = [NSString stringWithFormat:@"set%@%@:",[key substringToIndex:1].uppercaseString,[key substringFromIndex:1]];
         SEL setter = sel_registerName(methodName.UTF8String);
         
