@@ -20,8 +20,6 @@
 
 @interface UIImageView ()
 
-@property (nonatomic,strong) UITapGestureRecognizer *tag;
-
 @end
 
 @implementation UIImageView (ClickBlock)
@@ -33,11 +31,7 @@ static const void *qz_clickKey = @"qz_clickKey";
     objc_setAssociatedObject(self, qz_clickKey, clickBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
     
     self.userInteractionEnabled = true;
-    
-    if (self.tag) {
-        [self removeGestureRecognizer:self.tag];
-    }
-    
+
     if (clickBlock) {
         UITapGestureRecognizer *tag = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickAction)];
         [self addGestureRecognizer:tag];
