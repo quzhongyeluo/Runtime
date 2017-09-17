@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIImageView+QZ_ClickBlock.h"
+#import "UIView+QZ_ClickBlock.h"
 #import "UIButton+QZ_BackgroundColor.h"
 #import "UIButton+QZ_RepeatClick.h"
 

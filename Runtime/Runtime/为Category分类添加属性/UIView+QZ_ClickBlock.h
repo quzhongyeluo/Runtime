@@ -1,5 +1,5 @@
 //
-//  UIImageView+ClickBlock.h
+//  UIView+ClickBlock.h
 //  Runtime
 //
 //  Created by 曲终叶落 on 2017/9/3.
@@ -11,12 +11,12 @@
 
 /*
  
- 为UIImageView添加点击事件
+ 为UIView添加点击事件
  */
 
 typedef void(^ClickBlcok)();
 
-@interface UIImageView (ClickBlock)
+@interface UIView (ClickBlock)
 
 @property (nonatomic, copy ) ClickBlcok clickBlock;
 

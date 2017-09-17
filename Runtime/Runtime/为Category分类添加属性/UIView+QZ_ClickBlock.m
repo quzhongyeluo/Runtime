@@ -1,12 +1,12 @@
 //
-//  UIImageView+ClickBlock.m
+//  UIView+ClickBlock.m
 //  Runtime
 //
 //  Created by 曲终叶落 on 2017/9/3.
 //  Copyright © 2017年 曲终叶落. All rights reserved.
 //
 
-#import "UIImageView+QZ_ClickBlock.h"
+#import "UIView+QZ_ClickBlock.h"
 #import <objc/message.h>
 
 /*
@@ -18,11 +18,11 @@
  关联策略表明了相关的对象是通过赋值，保留引用还是复制的方式进行关联的；还有这种关联是原子的还是非原子的。这里的关联策略和声明属性时的很类似。这种关联策略是通过使用预先定义好的常量来表示的。
  */
 
-@interface UIImageView ()
+@interface UIView ()
 
 @end
 
-@implementation UIImageView (ClickBlock)
+@implementation UIView (ClickBlock)
 
 static const void *qz_clickKey = @"qz_clickKey";
 
